@@ -12,9 +12,9 @@ class ExpenseFactory extends Factory
     public function definition()
     {
         return [
-            'description' => $this->faker->sentence,
-            'amount' => $this->faker->numberBetween(10, 100),
-            'date' => $this->faker->dateTimeBetween('-1 month', 'now')->format('Y-m-d'),
+            'description' => fake()->sentence,
+            'amount' => fake()->numberBetween(10, 100),
+            'date' => fake()->dateTimeBetween('-1 month', 'now')->format('Y-m-d'),
             'user_id' => \App\Models\User::factory(),
         ];
     }
