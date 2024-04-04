@@ -1,8 +1,5 @@
 FROM richarvey/nginx-php-fpm:3.1.6
 
-# Install dependencies
-RUN composer require fzaninotto/faker
-
 
 COPY . .
 
